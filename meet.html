@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+
+
+<!-- Escrito por Filipe Marques --> 
+
+<html>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width-device-width, incial-scale=1">
+        <title>Brainstorming</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="icon" href="http://www.mawgrim.co.uk/cavalcade/byker.jpg"
+    <body>
+
+<!--
+          
+
+-->
+
+ <!-- Button to open the modal login form -->
+<button onclick="document.getElementById('id01').style.display='block'" class="lgin">L</button>
+
+<!-- The Modal -->
+<div id="id01" class="modal">
+  <span onclick="document.getElementById('id01').style.display='none'"
+class="close" title="Close Modal">&times;</span>
+
+  <!-- Modal Content -->
+  <form class="modal-content animate" action="/action_page.php">
+    <div class="imgcontainer">
+    </div>
+
+    <div class="container">
+      <label><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" required>
+
+      <label><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+
+      <button type="submit">Login</button>
+      <label>
+        <input type="checkbox" checked="checked"> Remember me
+      </label>
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+      <span class="psw">Forgot <a href="#">password?</a></span>
+    </div>
+  </form>
+</div> 
+
+
+  <!-- Button to open the modal -->
+<button onclick="document.getElementById('id02').style.display='block'" class="registerr">R</button>
+
+<!-- The Modal (contains the Sign Up form) -->
+<div id="id02" class="modal">
+  <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
+  <form class="modal-content" action="/action_page.php">
+    <div class="container">
+      <h1>Sign Up</h1>
+      <p>Please fill in this form to create an account.</p>
+      <hr>
+      <label><b>Email</b></label>
+      <input type="text" placeholder="Enter Email" name="email" required>
+      <label><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="username" required>
+      <label><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+
+      <label><b>Repeat Password</b></label>
+      <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+
+      <label>
+        <input type="checkbox" checked="checked" style="margin-bottom:15px"> Remember me
+      </label>
+
+      <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+
+      <div class="clearfix">
+        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+        <button type="submit" class="signup">Sign Up</button>
+      </div>
+    </div>
+  </form>
+</div> 
+
+        
+
+        <ul class="nav">
+
+        <li> <a href="#slides"> HOME </a></li>
+        <li> <a href="#aboutus"> SOBRE NÓS </a></li>
+        <li> <a href="#artigos"> ARTIGOS </a></li>
+        <li> <a href="#contact"> CONTACTOS </a></li>
+        </ul>
+
+
+
+
+
+
+        <section>
+  <h1 class="title"> <p> BRAINSTORMING </p> </h1>
+
+  </section>
+
+
+
+
+<section id="slides">
+<img class="myslides" src="http://www.bfi.org.uk/sites/bfi.org.uk/files/styles/full/public/image/classe-tous-risques-1960-005-gangsters-car-bystanders.jpg?itok=DkVRp9MR"  style="width:100%">
+<img class="myslides" src="https://travsd.files.wordpress.com/2014/09/keystone-kops-granger.jpg" style="width:100%">
+<img class="myslides" src="https://assets2.bigthink.com/system/idea_thumbnails/51613/size_1024/Breathless-Screenshot-01.jpg?1373649902" style="width:100%">
+<img class="myslides" src="https://i.pinimg.com/736x/f4/a4/7c/f4a47cd2e4c4e3c8e75b970563aa0761--bastille-day-french-films.jpg" style="width:100%">
+<img class="myslides" src="https://i.pinimg.com/736x/d7/67/1d/d7671d875a128376d96773160d232a6a--g%C3%A9rard-depardieu-robert-richard.jpg" style="width:100%">
+<img class="myslides" src="https://i.pinimg.com/originals/f4/b7/51/f4b751f67f31785aa1346f3dbc159c61.jpg" style="width:100%">
+<img class="myslides" src="http://wineandbowties.com/wp-content/uploads/2012/08/Lounging-by-Aarons-Jules-1950s-Courtesy-of-Boston-Public-Library.jpeg" style="width:100%">
+<img class="myslides" src="https://images.complex.com/complex/image/upload/c_limit,w_680/fl_lossy,pg_1,q_auto/aaygof8bk1j0lygpy7vh.jpg" style="width:100%">
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+// Automatic Slideshow - change image every 3 seconds
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("myslides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}
+    x[myIndex-1].style.display = "block";
+    setTimeout(carousel, 3000);
+}
+</script>
+        <script type="text/javascript"></script>
+        <script src="https://ajax.google.com/ajax/libs/jquery/3.1.0/jquery.min.js"> </script>
+
+
+<script>
+
+
+var $items = $( '#rb-grid > li' ),
+	transEndEventNames = {
+		'WebkitTransition' : 'webkitTransitionEnd',
+		'MozTransition' : 'transitionend',
+		'OTransition' : 'oTransitionEnd',
+		'msTransition' : 'MSTransitionEnd',
+		'transition' : 'transitionend'
+	},
+
+	// transition end event name
+	transEndEventName = transEndEventNames[ Modernizr.prefixed( 'transition' ) ],
+
+	// window and body elements
+	$window = $( window ),
+	$body = $( 'BODY' ),
+
+	// transitions support
+	supportTransitions = Modernizr.csstransitions,
+
+	// current item's index
+	current = -1,
+
+	// window width and height
+	winsize = getWindowSize();
+
+</script>
+
+
+
+ <script>
+// Get the modal
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script> 
+
+<script>
+var modal = document.getElementById("id02")
+
+window.onclick = function (even) {
+	if (event.target == modal) {
+		modal.style.display = "none";
+	}
+}
+
+</script>
+
+<script type="text/javascript">// When the user scrolls down 20px from the top of the document, slide down the navbar
+// When the user scrolls to the top of the page, slide up the navbar (50px out of the top view)
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    document.getElementById("navbar").style.top = "0";
+  } else {
+    document.getElementById("navbar").style.top = "-50px";
+  }
+} </script>
+
+
+
+<h2 class="aboutus" id="aboutus"> <p> Sobre Nós </p> </h2> 
+<hr>
+
+<p class="textoabout"> <span style="color:grey"> Este site tem como objetivo principal cultivar mais conhecimento sobre a arte. Criado por apaixonados pelas mais diversas ramificações desta,"Brainstorming" traz os conceito do fórum cultural de volta. Juntem-se aqui para projetos culturais, como a criação de bandas, ínicio de de projetos cinematográficos, partilhem ideias uns com os outros ! A criação de artigos sobre os mais diversos assuntos como o cinema, a música, o teatro, etc vêm enriquecer ainda mais. Este site é no fundo desenhado por todos vocês, por isso caso tenham uma ideia, queiram participar neste projeto "Brainstorming" não hesitem em contactar,NÓS somos a alma deste evento :)
+
+</span>
+
+
+
+
+
+
+    </body>
+  </html>
+  
+
