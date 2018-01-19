@@ -2,16 +2,19 @@ body {
               margin: 0;
               padding: 0;
               font-family: 'Arial', serif;
-              background: linear-gradient(90deg,#3C3B3F,#605C3C);
+              background: linear-gradient(20deg,#b29f94,#000000);
               background-size: 400% 400%;
               animation: BackgroundGradient 30s ease infinite;
+
             }
 
             @keyframes BackgroundGradient {
               0% {background-position: 0% 50%;}
               50% {background-position: 100% 50%;}
               100% {background-position: 0% 50%;} 
+
             }
+
 
 
             .nav {
@@ -345,6 +348,40 @@ body {
 
 
 
+.logintitle {
+              position: static;
+              left: 50%;
+              right: 50%;
+              font-family: Open Sans, sans-serif;
+              color: #fff;
+              font-weight: 500;
+              text-transform: uppercase;
+              text-align: center;
+              font-size: 2em; 
+              background-color:#000;
+              padding: 25px;
+              letter-spacing: 15px;
+              text-shadow: 2px 3px green;
+
+}
+
+
+.registertitle {
+              position: static;
+              left: 50%;
+              right: 50%;
+              font-family: Open Sans, sans-serif;
+              color: #fff;
+              font-weight: 500;
+              text-transform: uppercase;
+              text-align: center;
+              font-size: 2em; 
+              background-color:#000;
+              padding: 25px;
+              letter-spacing: 15px;
+              text-shadow: 2px 3px green;
+
+}
 
  /* The Modal (background) */
 .modal {
@@ -363,6 +400,7 @@ body {
 
 /* Modal Content/Box */
 .modal-content {
+    background-color: #fefefe;
     margin: 5px auto; /* 15% from the top and centered */
     border: 1px solid #888;
     width: 80%; /* Could be more or less, depending on screen size */
@@ -412,27 +450,39 @@ body {
   padding: 10px;
   border-radius: 50%;
   background:#000000;
-  width:50px;
-  height:50px;
+  width:65px;
+  height:65px;
   color: #FFFFFF;
   font-family: 'Exo', sans-serif;
+  text-align: center;
+  font-size: 85%;
+  border: 1px solid white;
+
 
 }
 
 
+
+.in {
+  text-align: center;
+}
+
 .registerr {
   position: absolute;
+  text-align: left;
   top: calc(36.5% - 210px);
-  left: calc(85% - 150px);
+  left: calc(85% - 20px);
   height: 150px;
   width: 250px;
   padding: 10px;
   border-radius: 50%;
   background:#000000;
-  width:50px;
-  height:50px;
+  width:68px;
+  height:68px;
   color: #FFFFFF;
   font-family: 'Exo', sans-serif;
+  font-size:85%;
+  border: 1px solid white;
 }
 
 .container {
@@ -474,6 +524,11 @@ button:hover {
 
 /* Extra styles for the cancel button */
 .cancelbtn {
+  padding: 14px 20px;
+  background-color: #f44336;
+}
+
+.cancelbtn2 {
   padding: 14px 20px;
   background-color: #f44336;
 }
@@ -545,4 +600,17 @@ hr {
   .cancelbtn, .signupbtn {
     width: 100%;
   }
+}
+
+img {
+  width: 100%;
+}
+
+.textabout{
+  color: #C0C0C0;
+  text-align: center;
+  letter-spacing: 2px;
+  line-height: 1.5;
+  font:times;
+  text-shadow: 4px 5 px black;
 }
