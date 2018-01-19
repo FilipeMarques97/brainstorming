@@ -5,7 +5,7 @@
 
 <html>
         <meta charset="utf-8">
-        <meta name="viewport" content="width-device-width, incial-scale=1">
+       <meta name="viewport" content="width-device-width, incial-scale=1"> 
         <title>Brainstorming</title>
         <link rel="stylesheet" type="text/css" href="style.css">
         <link rel="icon" href="http://www.mawgrim.co.uk/cavalcade/byker.jpg"
@@ -17,10 +17,11 @@
 -->
 
  <!-- Button to open the modal login form -->
-<button onclick="document.getElementById('id01').style.display='block'" class="lgin">L</button>
+<button onclick="document.getElementById('id01').style.display='block'" class="lgin">Login</button>
 
 <!-- The Modal -->
 <div id="id01" class="modal">
+    <h3 class="logintitle"> LOGIN </h3>
   <span onclick="document.getElementById('id01').style.display='none'"
 class="close" title="Close Modal">&times;</span>
 
@@ -30,6 +31,8 @@ class="close" title="Close Modal">&times;</span>
     </div>
 
     <div class="container">
+
+
       <label><b>Username</b></label>
       <input type="text" placeholder="Enter Username" name="uname" required>
 
@@ -43,7 +46,7 @@ class="close" title="Close Modal">&times;</span>
     </div>
 
     <div class="container" style="background-color:#f1f1f1">
-      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn2">Cancel</button>
       <span class="psw">Forgot <a href="#">password?</a></span>
     </div>
   </form>
@@ -51,10 +54,12 @@ class="close" title="Close Modal">&times;</span>
 
 
   <!-- Button to open the modal -->
-<button onclick="document.getElementById('id02').style.display='block'" class="registerr">R</button>
+<button onclick="document.getElementById('id02').style.display='block'" class="registerr"> Create <br>Account</br></button>
 
 <!-- The Modal (contains the Sign Up form) -->
 <div id="id02" class="modal">
+<h4 class="registertitle"> CREATE YOUR ACCOUNT </h4>
+<form class="modal-content animate" action="/action_page.php">
   <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
   <form class="modal-content" action="/action_page.php">
     <div class="container">
@@ -109,14 +114,14 @@ class="close" title="Close Modal">&times;</span>
 
 
 <section id="slides">
-<img class="myslides" src="http://www.bfi.org.uk/sites/bfi.org.uk/files/styles/full/public/image/classe-tous-risques-1960-005-gangsters-car-bystanders.jpg?itok=DkVRp9MR"  style="width:100%">
-<img class="myslides" src="https://travsd.files.wordpress.com/2014/09/keystone-kops-granger.jpg" style="width:100%">
-<img class="myslides" src="https://assets2.bigthink.com/system/idea_thumbnails/51613/size_1024/Breathless-Screenshot-01.jpg?1373649902" style="width:100%">
-<img class="myslides" src="https://i.pinimg.com/736x/f4/a4/7c/f4a47cd2e4c4e3c8e75b970563aa0761--bastille-day-french-films.jpg" style="width:100%">
-<img class="myslides" src="https://i.pinimg.com/736x/d7/67/1d/d7671d875a128376d96773160d232a6a--g%C3%A9rard-depardieu-robert-richard.jpg" style="width:100%">
-<img class="myslides" src="https://i.pinimg.com/originals/f4/b7/51/f4b751f67f31785aa1346f3dbc159c61.jpg" style="width:100%">
-<img class="myslides" src="http://wineandbowties.com/wp-content/uploads/2012/08/Lounging-by-Aarons-Jules-1950s-Courtesy-of-Boston-Public-Library.jpeg" style="width:100%">
-<img class="myslides" src="https://images.complex.com/complex/image/upload/c_limit,w_680/fl_lossy,pg_1,q_auto/aaygof8bk1j0lygpy7vh.jpg" style="width:100%">
+<img class="myslides"  src="http://www.bfi.org.uk/sites/bfi.org.uk/files/styles/full/public/image/classe-tous-risques-1960-005-gangsters-car-bystanders.jpg?itok=DkVRp9MR"  >
+<img class="myslides" src="https://travsd.files.wordpress.com/2014/09/keystone-kops-granger.jpg" >
+<img class="myslides" src="https://assets2.bigthink.com/system/idea_thumbnails/51613/size_1024/Breathless-Screenshot-01.jpg?1373649902" >
+<img class="myslides" src="https://i.pinimg.com/736x/f4/a4/7c/f4a47cd2e4c4e3c8e75b970563aa0761--bastille-day-french-films.jpg" >
+<img class="myslides" src="https://i.pinimg.com/736x/d7/67/1d/d7671d875a128376d96773160d232a6a--g%C3%A9rard-depardieu-robert-richard.jpg" >
+<img class="myslides" src="https://i.pinimg.com/originals/f4/b7/51/f4b751f67f31785aa1346f3dbc159c61.jpg" >
+<img class="myslides" src="http://wineandbowties.com/wp-content/uploads/2012/08/Lounging-by-Aarons-Jules-1950s-Courtesy-of-Boston-Public-Library.jpeg" >
+<img class="myslides" src="https://images.complex.com/complex/image/upload/c_limit,w_680/fl_lossy,pg_1,q_auto/aaygof8bk1j0lygpy7vh.jpg" >
 </section>
 
 
@@ -224,9 +229,9 @@ function scrollFunction() {
 <h2 class="aboutus" id="aboutus"> <p> Sobre Nós </p> </h2> 
 <hr>
 
-<p class="textoabout"> <span style="color:grey"> Este site tem como objetivo principal cultivar mais conhecimento sobre a arte. Criado por apaixonados pelas mais diversas ramificações desta,"Brainstorming" traz os conceito do fórum cultural de volta. Juntem-se aqui para projetos culturais, como a criação de bandas, ínicio de de projetos cinematográficos, partilhem ideias uns com os outros ! A criação de artigos sobre os mais diversos assuntos como o cinema, a música, o teatro, etc vêm enriquecer ainda mais. Este site é no fundo desenhado por todos vocês, por isso caso tenham uma ideia, queiram participar neste projeto "Brainstorming" não hesitem em contactar,NÓS somos a alma deste evento :)
+<p class="textabout"> Este site tem como objetivo principal cultivar mais conhecimento sobre a arte. Criado por apaixonados pelas mais diversas ramificações desta,"Brainstorming" traz os conceito do fórum cultural de volta. Juntem-se aqui para projetos culturais, como a criação de bandas, ínicio de projetos cinematográficos, partilhem ideias uns com os outros ! A criação de artigos sobre os mais diversos assuntos como o cinema, a música, o teatro, etc vêm enriquecer ainda mais. Este site é no fundo desenhado por todos vocês, por isso caso tenham uma ideia, queiram participar neste projeto "Brainstorming" não hesitem em contactar,NÓS somos a alma deste evento :) </p>
 
-</span>
+
 
 
 
